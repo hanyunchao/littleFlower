@@ -1,0 +1,70 @@
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.mask{
+    background-color: aqua;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.mask > .p_container{
+    position:absolute;
+    margin: 0 auto; /*水平居中*/
+    top: 50%; /*偏移*/
+    left:50%;
+    transform: translateX(-50%)  translateY(-50%);
+}
+.text{
+    display: inline-block;
+    height: 30px;
+    margin: 0;
+}
+.vacant{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-bottom:1px solid black;
+    margin: 0 20px;
+}
+.text_container{
+    text-align: center;
+}
+.girl,.boy{
+    display: inline-block;
+    cursor: pointer;
+}
+.girl span,.boy span{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10em;
+}
+.girl:hover span,.boy:hover span{
+    color: red !important;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+.people-container{
+    background-image:url('../img/newboy.jpg') ;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.tip{
+    color: transparent;
+}
+
+.end{
+    position: fixed;
+    bottom: 0;
+    color:white;
+    text-align: center;
+    width:100%;
+}
